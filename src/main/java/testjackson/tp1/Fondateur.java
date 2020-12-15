@@ -3,11 +3,12 @@ package testjackson.tp1;
 import java.time.LocalDate;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 public class Fondateur {
 	private String nom;
 	@JsonDeserialize(using = LocalDateDeserializer.class)
-	private LocalDate dateNaissance;
+	@JsonSerialize(using = LocalDateSerializer.class)	private LocalDate dateNaissance;
 	private String lieuNaissance;
 
 	public Fondateur() {
@@ -32,7 +33,7 @@ public class Fondateur {
 	public LocalDate getDateNaissance() {
 		return dateNaissance;
 	}
-
+	
 	public void setDateNaissance(LocalDate dateNaissance) {
 		this.dateNaissance = dateNaissance;
 	}

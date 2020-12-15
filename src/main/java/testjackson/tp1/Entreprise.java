@@ -1,24 +1,23 @@
 package testjackson.tp1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Entreprise {
 	private String nom;
 	private SiegeSocial siegeSocial;
-	private List<Fondateur> fondateur;
-	private List<ChiffreAffaire> chiffreAffaire;
+	private List<Fondateur> fondateur=new ArrayList<Fondateur>();
+	private List<ChiffreAffaire> chiffreAffaire=new ArrayList<ChiffreAffaire>();
 
 	public Entreprise() {
 	
 	}
 	
-	public Entreprise(String nom, SiegeSocial siegeSocial, List<Fondateur> fondateur,
-			List<ChiffreAffaire> chiffreAffaire) {
+	public Entreprise(String nom, SiegeSocial siegeSocial) {
 		super();
 		this.nom = nom;
 		this.siegeSocial = siegeSocial;
-		this.fondateur = fondateur;
-		this.chiffreAffaire = chiffreAffaire;
+		
 	}
 
 	public String getNom() {

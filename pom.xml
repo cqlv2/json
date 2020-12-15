@@ -5,12 +5,50 @@
 	<groupId>diginamic</groupId>
 	<artifactId>testjackson</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.jsonschema2pojo</groupId>
+				<artifactId>jsonschema2pojo-maven-plugin</artifactId>
+				<version>1.0.2</version>
+				<configuration>
+					<sourceDirectory>${basedir}/src/main/resources/json1.json</sourceDirectory>
+					<targetPackage>fr.diginamic.jsonschema.beans</targetPackage>
+					<outputDirectory>C:/Temp/output</outputDirectory>
+					<sourceType>json</sourceType>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+
 	<properties>
 		<maven.compiler.sources>11</maven.compiler.sources>
 		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>com.github.lalyos</groupId>
+			<artifactId>jfiglet</artifactId>
+			<version>0.0.3</version>
+		</dependency>
+
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
