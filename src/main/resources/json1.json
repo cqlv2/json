@@ -1,0 +1,72 @@
+[
+    {
+      "nom": "Google",
+      "siegeSocial": {
+        "site": "Googleplex",
+        "ville": "Mountain View",
+        "etat": "California",
+        "pays": "United States"
+      },
+      "fondateur": [{
+        "nom": "Larry Page",
+        "dateNaissance": "26/03/1973",
+        "lieuNaissance": "East Lansing, Michigan"
+      },
+      {
+        "nom": "Sergey Brin",
+        "dateNaissance": "21/08/1973",
+        "lieuNaissance": "Moscou, Union Soviétique"
+      }
+    ],
+    "chiffreAffaire": [
+      {
+      	"annee": 2008,
+      	"chiffre":16.49,
+      	"unite": "milliards de $"
+      },
+      {
+      	"annee": 2012,
+      	"chiffre":37.97,
+      	"unite": "milliards de $"
+      },
+      {
+      	"annee": 2016,
+      	"chiffre":89.46,
+      	"unite": "milliards de $"
+      },
+      {
+      	"annee": 2018,
+      	"chiffre":136.2,
+      	"unite": "milliards de $"
+      }
+    ]
+  },
+  {
+    "nom": "Amazon",
+    "siegeSocial": {
+      "ville": "Seattle",
+      "etat": "Washington",
+      "pays": "United States"
+    },
+    "fondateur": [
+      {
+        "nom": "Jeff Bezos",
+        "dateNaissance": "12/01/1964",
+        "lieuNaissance": "Albuquerque, Nouveau-Mexique"
+      },
+      {
+        "nom": "Sergey Brin",
+        "dateNaissance": "21/08/1973",
+        "lieuNaissance": "Moscou, Union Soviétique"
+      }
+    ],
+    "chiffreAffaire": [
+     {
+      	"annee": 2010,
+      	"chiffre":34.2,
+      	"unite": "milliards de $"
+      }
+    ]
+  }
+]
+
